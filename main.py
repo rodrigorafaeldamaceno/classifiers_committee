@@ -1,12 +1,6 @@
-# import pandas as pd
 # set, vers, virg
 import sys
-import pandas as pd
 import csv
-# from beautifultable import BeautifulTable
-
-# print('Number of arguments: {}'.format(sys.argv[1]))
-# print('ola')
 
 
 def formatNumber(n, digits):
@@ -24,17 +18,6 @@ def getClassifiedClass(s1, s2, s3):
         return 3
     else:
         return 0
-
-
-def mainPandas():
-    result1 = pd.read_csv(sys.argv[1])
-    result2 = pd.read_csv(sys.argv[2])
-    result3 = pd.read_csv(sys.argv[3])
-
-    print(result1.items)
-    # print(result1.items)
-    # for row in result1.items():
-    #     print(row)
 
 
 def mainCsv():
@@ -92,10 +75,9 @@ def mainCsv():
 
             pd = getClassifiedClass(p1, p2, p3)
 
-            # print(s1, s2, s3)
+            # print(s1, s2, s3, cs, p1, p2, p3, pd)
             print("{:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8} {:<8}".format(
                 s1, s2, s3, cs, p1, p2, p3, pd))
 
 
-# mainPandas()
 mainCsv()
