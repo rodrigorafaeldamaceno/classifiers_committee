@@ -74,21 +74,21 @@ def mainCsv():
             pd = 0
 
             # sum
-            s1 = round(float(rows1[i][4].replace('*', ''))+float(rows1[i]
-                                                                 [4].replace('*', ''))+float(rows1[i][4].replace('*', '')), 3)
-            s2 = round(float(rows1[i][5].replace('*', ''))+float(rows1[i]
-                                                                 [5].replace('*', ''))+float(rows1[i][5].replace('*', '')), 3)
-            s3 = round(float(rows1[i][6].replace('*', ''))+float(rows1[i]
-                                                                 [6].replace('*', ''))+float(rows1[i][6].replace('*', '')), 3)
+            s1 = formatNumber(float(rows1[i][4].replace('*', ''))+float(rows1[i]
+                                                                        [4].replace('*', ''))+float(rows1[i][4].replace('*', '')), 3)
+            s2 = formatNumber(float(rows1[i][5].replace('*', ''))+float(rows1[i]
+                                                                        [5].replace('*', ''))+float(rows1[i][5].replace('*', '')), 3)
+            s3 = formatNumber(float(rows1[i][6].replace('*', ''))+float(rows1[i]
+                                                                        [6].replace('*', ''))+float(rows1[i][6].replace('*', '')), 3)
             cs = getClassifiedClass(s1, s2, s3)
 
             # product
-            p1 = round(float(rows1[i][4].replace('*', ''))*float(rows1[i]
-                                                                 [4].replace('*', ''))*float(rows1[i][4].replace('*', '')), 3)
-            p2 = round(float(rows1[i][5].replace('*', ''))*float(rows1[i]
-                                                                 [5].replace('*', ''))*float(rows1[i][5].replace('*', '')), 3)
-            p3 = round(float(rows1[i][6].replace('*', ''))*float(rows1[i]
-                                                                 [6].replace('*', ''))*float(rows1[i][6].replace('*', '')), 3)
+            p1 = formatNumber(float(rows1[i][4].replace('*', ''))*float(rows1[i]
+                                                                        [4].replace('*', ''))*float(rows1[i][4].replace('*', '')), 3)
+            p2 = formatNumber(float(rows1[i][5].replace('*', ''))*float(rows1[i]
+                                                                        [5].replace('*', ''))*float(rows1[i][5].replace('*', '')), 3)
+            p3 = formatNumber(float(rows1[i][6].replace('*', ''))*float(rows1[i]
+                                                                        [6].replace('*', ''))*float(rows1[i][6].replace('*', '')), 3)
 
             pd = getClassifiedClass(p1, p2, p3)
 
